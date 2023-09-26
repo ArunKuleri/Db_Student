@@ -66,13 +66,13 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Scaffold(
         body: Container(
           width: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               colors: [
-                Colors.green.shade900,
-                Colors.green.shade800,
-                Colors.green.shade400
+                Color.fromARGB(255, 14, 12, 12),
+                Color.fromARGB(255, 103, 103, 103),
+                Color.fromARGB(255, 15, 20, 15)
               ],
             ),
           ),
@@ -88,7 +88,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Login",
-                        style: TextStyle(color: Colors.white, fontSize: 40)),
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 251, 251, 251),
+                            fontSize: 40)),
                   ],
                 ),
               ),
@@ -111,11 +113,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         Container(
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: const Color.fromARGB(255, 249, 249, 249),
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: const [
                                 BoxShadow(
-                                    color: Color.fromRGBO(225, 95, 27, .3),
+                                    color: Color.fromRGBO(23, 23, 22, 0.298),
                                     blurRadius: 20,
                                     offset: Offset(0, 10))
                               ]),
@@ -125,10 +127,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               children: [
                                 Container(
                                   padding: const EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     border: Border(
                                       bottom: BorderSide(
-                                          color: Colors.grey.shade200),
+                                          color: Color.fromARGB(255, 3, 2, 2)),
                                     ),
                                   ),
                                   child: textform(
@@ -149,10 +151,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Height10,
                                 Container(
                                   padding: const EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     border: Border(
                                       bottom: BorderSide(
-                                          color: Colors.grey.shade200),
+                                          color: Color.fromARGB(255, 0, 0, 0)),
                                     ),
                                   ),
                                   child: textform(
@@ -202,7 +204,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         const Text(
                           "OR",
                           style: TextStyle(
-                              color: Colors.blueGrey,
+                              color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 15,
                               fontWeight: FontWeight.bold),
                         ),
@@ -224,10 +226,10 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text("Don't have an account?",
-                style: TextStyle(color: Colors.green)),
+                style: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
             textbutton(
               'SignUp',
-              Colors.green,
+              const Color.fromARGB(255, 47, 122, 252),
               () => Navigator.pushNamed(context, 'signup'),
             ),
           ],

@@ -62,7 +62,7 @@ class _PhoneVerificationState extends State<PhoneVerification> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Phone verification"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.black,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

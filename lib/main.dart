@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Firebase',
+      title: 'Admin',
       //onGenerateRoute: generateRoute,
       navigatorKey: navigatorKey,
       routes: Routes().route,

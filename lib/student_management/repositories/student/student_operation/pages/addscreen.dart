@@ -99,7 +99,7 @@ class _AddScreenState extends State<AddScreen> {
       backgroundColor: Color(0xFFE5E5E5),
       appBar: AppBar(
         title: const Text('Add Student'),
-        backgroundColor: Color(0xFFE5E5E5),
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
         centerTitle: true,
         elevation: 0,
       ),
@@ -300,8 +300,8 @@ class _AddScreenState extends State<AddScreen> {
                           }
                         },
                         style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStateProperty.all(Colors.green)),
+                            backgroundColor: MaterialStateProperty.all(
+                                const Color.fromARGB(255, 0, 0, 0))),
                         child: const Text("Add"),
                       ),
                     ),

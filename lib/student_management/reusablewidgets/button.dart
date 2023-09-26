@@ -19,7 +19,8 @@ class Button extends StatelessWidget {
       child: Container(
         height: 50,
         decoration: BoxDecoration(
-            color: Colors.green, borderRadius: BorderRadius.circular(10)),
+            color: const Color.fromARGB(255, 0, 0, 0),
+            borderRadius: BorderRadius.circular(10)),
         child: Center(
           child: loading
               ? const CircularProgressIndicator(
@@ -53,12 +54,12 @@ class OutlineButton extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             border: Border.all(
-              color: Colors.green,
+              color: const Color.fromARGB(255, 4, 6, 4),
             )),
         child: Center(
           child: Text(title,
               style: const TextStyle(
-                  color: Colors.green,
+                  color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 15,
                   fontWeight: FontWeight.w600)),
         ),

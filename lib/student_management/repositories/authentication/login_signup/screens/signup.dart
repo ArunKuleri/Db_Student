@@ -56,7 +56,7 @@ class _SignUpState extends State<SignUp> {
     // }
 
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Color.fromARGB(255, 237, 230, 230),
       body: Center(
         child: SingleChildScrollView(
           child: Form(
@@ -65,13 +65,14 @@ class _SignUpState extends State<SignUp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "Create an Account",
-                  style: TextStyle(fontSize: 30, color: Colors.white),
+                  "Create Your Account here!",
+                  style: TextStyle(
+                      fontSize: 30, color: Color.fromARGB(255, 0, 0, 0)),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Card(
-                    color: Colors.green.shade500,
+                    color: Color.fromARGB(255, 237, 240, 237),
                     elevation: 20,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -80,8 +81,12 @@ class _SignUpState extends State<SignUp> {
                           Container(
                               margin: const EdgeInsets.only(
                                   top: 30, bottom: 20, left: 20, right: 20),
-                              width: 150,
-                              child: Image.asset('assets/images/logo.png')),
+                              width: 250,
+                              height: 250,
+                              child: Icon(
+                                Icons.person,
+                                size: 200,
+                              )),
                           textform(
                             'email',
                             emailController,
@@ -155,10 +160,10 @@ class _SignUpState extends State<SignUp> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text("Already have an account?",
-                        style: TextStyle(color: Colors.white)),
+                        style: TextStyle(color: Color.fromARGB(255, 5, 3, 3))),
                     textbutton(
                         'Login',
-                        Colors.white,
+                        Color.fromARGB(255, 42, 135, 234),
                         () => Navigator.push(
                             context,
                             MaterialPageRoute(

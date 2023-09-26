@@ -14,7 +14,7 @@ class DrawerWidget extends StatelessWidget {
           children: [
             Container(
               // width: double.infinity,
-              color: Colors.green,
+              color: Colors.black,
               child: DrawerHeader(
                 child: Column(
                   children: [
@@ -22,7 +22,7 @@ class DrawerWidget extends StatelessWidget {
                       margin: const EdgeInsets.only(bottom: 10),
                       height: 70,
                       decoration: const BoxDecoration(
-                        color: Colors.green,
+                        color: Colors.black,
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           fit: BoxFit.contain,
